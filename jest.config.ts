@@ -11,3 +11,4 @@ export default {
         "\\.svg": "<rootDir>/src/test/_mocks_/fileMock.cjs"
     },
 }
+
