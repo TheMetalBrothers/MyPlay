@@ -8,6 +8,10 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types: [opened]
+    branches:
+      - main
   workflow_dispatch:
 
 # Optional: environment variables can be injected here
