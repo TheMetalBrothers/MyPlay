@@ -9,9 +9,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-      SKIP_DEPLOY_ON_MISSING_SECRETS: true  
-
 jobs:
   build:
 
@@ -50,7 +47,7 @@ jobs:
         with:
           repo_token: ${{ secrets.AZURE_PUBLISH_PROFILE }} 
           action: "upload"
-          app_location: "/dist" 
+          app_location: "/src" 
           api_location: "" 
           output_location: "" 
           
